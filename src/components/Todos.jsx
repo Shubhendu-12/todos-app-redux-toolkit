@@ -8,12 +8,14 @@ const Todos = () => {
     const dispatch = useDispatch()
   return (
     <>
-      <div>Todos</div>
+      <div className='py-5 px-5 items-center justify-center bg-red-100'>
+        Todos
+          </div>
       {todos?.map((todo)=>(
         
         <li key={todo.id}>
             {todo.text}
-            <button
+            <button className='bg-black'
             onClick={()=>{dispatch(removeTodo(todo.id))}} >
                 Remove
             </button>
