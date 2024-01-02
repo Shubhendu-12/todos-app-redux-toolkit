@@ -10,7 +10,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 // }
 // The above code is to define initial state seperately
 
-const todoSlice = createSlice({ 
+export const todoSlice = createSlice({ 
     name: "todo", 
     initialState:{
         todos:[
